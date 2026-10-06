@@ -1,6 +1,6 @@
 import { profile } from '../data/profile';
 import { powerbi } from '../data/powerbi';
-import { ArrowUpRight, DownloadIcon, GitHubIcon } from './icons';
+import { ArrowUpRight, DownloadIcon, GitHubIcon, LinkedInIcon } from './icons';
 
 function DataBackdrop() {
   return (
@@ -49,6 +49,9 @@ export function Hero() {
             </a>
             <a href={profile.github.url} target="_blank" rel="noreferrer" className={`${btnBase} border border-line bg-panel/60 hover:border-sky/60 hover:bg-panel`}>
               <GitHubIcon /> GitHub
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className={`${btnBase} border border-line bg-panel/60 hover:border-sky/60 hover:bg-panel`}>
+              <LinkedInIcon /> LinkedIn
             </a>
             <a href="#contact" className={`${btnBase} px-3 text-muted underline decoration-line underline-offset-4 hover:text-fg hover:decoration-gold`}>
               Contact

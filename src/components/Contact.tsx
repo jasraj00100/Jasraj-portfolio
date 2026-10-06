@@ -1,7 +1,7 @@
 import { profile } from '../data/profile';
 import { Section } from './Section';
 import { Reveal } from './Reveal';
-import { DownloadIcon, GitHubIcon, MailIcon, PinIcon } from './icons';
+import { DownloadIcon, GitHubIcon, LinkedInIcon, MailIcon, PinIcon } from './icons';
 
 const btn = 'inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-medium transition-colors';
 
@@ -45,6 +45,12 @@ export function Contact() {
             <dt className="flex items-center gap-2 text-sm text-muted"><GitHubIcon width={15} height={15} /> GitHub</dt>
             <dd className="mt-1"><a className="underline decoration-line underline-offset-4 hover:decoration-gold" href={github.url} target="_blank" rel="noreferrer">github.com/{github.user}</a></dd>
           </div>
+
+          <div className="border-b border-line py-4 sm:border-b-0">
+            <dt className="flex items-center gap-2 text-sm text-muted"><LinkedInIcon width={15} height={15} /> LinkedIn</dt>
+            <dd className="mt-1"><a className="underline decoration-line underline-offset-4 hover:decoration-gold" href={profile.linkedin} target="_blank" rel="noopener noreferrer">linkedin.com/in/jasraj-6b284627b</a></dd>
+          </div>
+
           <div className="py-4">
             <dt className="flex items-center gap-2 text-sm text-muted"><PinIcon width={15} height={15} /> Location</dt>
             <dd className="mt-1">{location}</dd>

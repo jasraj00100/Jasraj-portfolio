@@ -1,8 +1,8 @@
-// Personal details used across the site. Edit here, not in components.
+//** Personal details used across the site. Edit here, not in components.**
 
 export const profile = {
   name: 'Jasraj',
-  fullName: '', // optional. Your resume uses just "Jasraj", so this stays empty.
+  fullName: '', //** optional. Your resume uses just "Jasraj", so this stays empty.**
   headline: 'Data analytics & Python',
   role: 'CSE undergraduate at IIIT Ranchi',
   intro:
@@ -11,17 +11,19 @@ export const profile = {
 
   email: 'sjrjasraj9470@gmail.com',
   location: 'Ranchi, Jharkhand, India',
-  // Resume PDF lives at public/resume.pdf (replace the file to update it)
+  //** Resume PDF lives at public/resume.pdf (replace the file to update it)**
   resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
 
   github: {
     user: 'jasraj00100',
-    url: 'https://github.com/jasraj00100',
-    // Repository names to keep out of the live GitHub list.
+    url: '[https://github.com/jasraj00100](https://github.com/jasraj00100)',
+    //** Repository names to keep out of the live GitHub list.**
     hide: [] as string[],
   },
 
-  // Shows "Used in: <project>" under skills that are backed by a project on this site.
+  linkedin: 'https://www.linkedin.com/in/jasraj00100',
+
+  //** Shows "Used in: <project>" under skills that are backed by a project on this site.**
   showSkillEvidence: true,
 };
 
