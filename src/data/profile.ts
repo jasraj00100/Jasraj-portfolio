@@ -16,7 +16,7 @@ export const profile = {
 
   github: {
     user: 'jasraj00100',
-    url: '[https://github.com/jasraj00100](https://github.com/jasraj00100)',
+    url: 'https://github.com/jasraj00100',
     //** Repository names to keep out of the live GitHub list.**
     hide: [] as string[],
   },
